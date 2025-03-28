@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Cleaning - HomeClean</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><span class="malke">malke’s</span> HomeClean</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="form-section">
+    <h2>Book a Home Cleaning</h2>
+    <form action="https://formspree.io/f/mbjnvzrj" method="POST">
+      <input type="hidden" name="_captcha" value="false" />
+
+      <label for="home-type">Home Type</label>
+      <select id="home-type" name="home-type" required>
+        <option value="">Select</option>
+        <option value="1bhk">1 BHK</option>
+        <option value="2bhk">2 BHK</option>
+        <option value="3bhk">3 BHK</option>
+        <option value="4bhk">4 BHK</option>
+        <option value="5bhk">5 BHK</option>
+        <option value="6bhk">6 BHK</option>
+        <option value="rowhouse">Row House</option>
+        <option value="bungalow">Bungalow</option>
+      </select>
+
+      <label for="area">Area (sq ft)</label>
+      <input type="number" id="area" name="area" placeholder="e.g., 1200" required />
+
+      <label for="location">Your Location</label>
+      <input type="text" id="location" name="location" placeholder="City or Area" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <button type="submit">Submit Booking</button>
+    </form>
+    <p style="margin-top: 20px;">We’ll contact you after we receive your booking.</p>
+  </section>
+</body>
+</html>
